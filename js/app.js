@@ -1,4 +1,4 @@
-// variable
+// VARIABLES
 const year = document.querySelector('#year');
 const marca = document.querySelector('#marca');
 const minimo = document.querySelector('#minimo');
@@ -7,12 +7,12 @@ const puertas = document.querySelector('#puertas');
 const transmision = document.querySelector('#transmision');
 const color = document.querySelector('#color');
 
-//Contenedor para los resultados
+//CONTENEDOR DE LOS RESULTADOS
 const resultado = document.querySelector('#resultado');
 const max = new Date().getFullYear();
 const min = max - 10;
 
-//Objeto 
+//OBJETO
 const datosBusqueda = {
     marca: '',
     year : '',
@@ -24,7 +24,7 @@ const datosBusqueda = {
 };
 
 
-//eventos 
+//EVENTO
 document.addEventListener('DOMContentLoaded', () => {
     mostrarAutos(autos);
 
@@ -69,8 +69,7 @@ color.addEventListener('change', e => {
 });
 
 
-//Funciones
-
+//FUNCIONES
 
 function mostrarAutos(autos){
     limpiarHTML();
@@ -98,7 +97,7 @@ function mostrarAutos(autos){
        resultado.appendChild(noResultado);
    }
 
- //Limpiar HTML
+ //LIMPIAR HTML
  function limpiarHTML(){
     while(resultado.firstChild){
         resultado.removeChild(resultado.firstChild);
